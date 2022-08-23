@@ -1,0 +1,40 @@
+body {
+    background-color: #2D2B2B;
+    padding: 1rem;
+    margin: 0;
+  }
+  .card {
+    border: 1px solid black;
+    margin-bottom: 1rem;
+    background-color: white;
+    width: 500px
+  }
+  .card:last-child {
+    margin-bottom: 0;
+  }
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    padding: .6rem;
+    font-size: 2rem;
+    align-items: center;
+    margin-bottom: -1px;
+  }
+  .card-body {
+    padding: 0 .5rem;
+    height: 0;
+    overflow: hidden;
+  }
+  .card-body.show {
+    height: auto;
+    padding: .6rem;
+    box-sizing: border-box;
+  }
+  .inputs:hover {
+    border-bottom: 3px solid white;
+    transition: 0.3s ease-in-out;
+  }
+  button {
+    cursor: pointer;
+  }
