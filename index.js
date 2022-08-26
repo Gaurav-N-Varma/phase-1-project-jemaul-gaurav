@@ -21,6 +21,9 @@ fetch('https://api.punkapi.com/v2/beers')
         displayButton.textContent = 'Display'
         beerDiv.append(displayButton)
 
+        // when the user mouses over the beer name, change colors
+        displayButton.addEventListener('mouseover', () => {displayButton.style="color:red;"});
+
         // when beer display button is clicked, displays picture
         displayButton.addEventListener('click', () => {
             const beerImg = document.querySelector('#iconicBeer')
